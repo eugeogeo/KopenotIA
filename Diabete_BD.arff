@@ -1,0 +1,150 @@
+@relation diabetes
+@attribute 'id' numeric
+@attribute sexo {'F','M'}
+@attribute filhos numeric
+@attribute escolaridade {'Fund_Inc', 'Medio_Inc', 'Fund_Comp', 'Med_Com', 'Sup_Com', 'Sup_Inc'}
+@attribute situacao {'Solteiro', 'Divorciado', 'Viúvo', 'Casado'}
+@attribute profissao {'Estudante', 'Lavrador', 'Aposentado', 'Feirante', 'Desempregado', 'Diarista', 'Cuidadora', 'Dona_Casa', 'Cuida_idoso', 'Zelador', 'Administrativa', 'Motorista'}
+@attribute renda numeric
+@attribute peso numeric
+@attribute alt numeric
+@attribute pa_max numeric
+@attribute pa_min numeric
+@attribute glicemia numeric
+@attribute imc numeric
+@attribute  gestante {'S','N'}
+@attribute num_gestante numeric
+@attribute abdominal numeric
+@attribute triceps numeric
+@attribute atividades_fisicas {'S','N'}
+@attribute ativ_fisica_vezes numeric
+@attribute  vicio {'S','N'}
+@attribute  outras_doencas {'S','N'}
+@attribute  doenca_familiar {'S','N'}
+@attribute class { tested_negative, tested_positive}
+@data
+
+1,'F',3,Medio_Inc,Casado,Dona_Casa,0.00,81.00,1.57,100,7,98,33,N,3,115,37,N,0,N,S,N,tested_positive
+2,M,0,Medio_Inc,Solteiro,Estudante,0.00,50.00,1.42,100,7,104,25,N,0,81,27,N,0,N,N,N,tested_negative
+3,M,3,Medio_Inc,Casado,Lavrador,0.00,91.00,1.64,120,8,106,34,N,0,110,38,N,0,N,N,N,tested_negative
+4,F,3,Medio_Inc,Casado,Dona_Casa,0.00,90.00,1.59,120,6,108,36,N,3,107,39,N,0,N,N,N,tested_negative
+5,M,3,Fund_Inc,Casado,Lavrador,0.00,84.60,1.66,100,6,97,31,N,0,101,34,N,0,N,N,N,tested_negative
+6,F,0,Medio_Inc,Solteiro,Estudante,0.00,53.00,1.58,100,8,84,21,N,0,71,27,N,0,N,N,N,tested_negative
+7,F,3,Medio_Inc,Casado,Dona_Casa,0.00,67.80,1.56,120,8,90,28,N,3,83,31,N,0,N,N,N,tested_negative
+8,F,3,Medio_Inc,Solteiro,Feirante,0.00,66.90,1.50,120,8,221,30,N,3,88,32,N,0,N,N,N,tested_positive
+9,F,2,Fund_Inc,Solteiro,Feirante,0.00,46.70,1.52,100,7,289,20,N,0,75,23,N,0,N,S,N,tested_positive
+10,F,2,Fund_Inc,Casado,Dona_Casa,0.00,123.20,1.67,120,7,113,44,N,0,121,44,N,0,N,N,S,tested_negative
+11,M,1,Medio_Inc,Casado,Aposentado,0.00,72.40,1.65,100,9,122,27,N,0,98,31,S,7,N,S,S,tested_negative
+12,F,2,Med_Com,Solteiro,Dona_Casa,82.00,77.50,1.58,120,9,103,31,N,0,95,35,N,0,N,N,N,tested_negative
+13,M,0,Fund_Inc,Solteiro,Lavrador,0.00,93.00,1.66,160,9,111,34,N,0,115,38,S,7,N,N,N,tested_negative
+14,F,4,Fund_Inc,Casado,Dona_Casa,0.00,75.00,1.48,140,9,106,34,N,0,110,35,N,7,N,S,N,tested_negative
+15,F,3,Fund_Inc,Casado,Feirante,0.00,69.60,1.55,120,9,117,29,N,0,94,31,S,0,N,N,N,tested_negative
+16,M,5,Fund_Inc,Casado,Zelador,990.00,61.00,1.69,130,9,113,21,N,0,89,31,S,5,N,S,N,tested_negative
+17,M,0,Medio_Inc,Solteiro,Estudante,0.00,58.90,1.58,100,6,113,24,N,0,84,28,S,5,N,N,N,tested_negative
+18,F,0,Medio_Inc,Solteiro,Estudante,0.00,50.20,1.60,100,7,78,20,N,0,73,23,S,2,N,N,S,tested_negative
+19,F,3,Fund_Inc,Solteiro,Feirante,120.00,51.10,1.47,100,7,128,24,N,0,85,24,N,0,N,S,S,tested_positive
+20,F,1,Fund_Inc,Solteiro,Aposentado,990.00,40.80,1.53,120,9,97,17,N,0,79,22,N,0,S,N,N,tested_negative
+21,F,4,Fund_Inc,Casado,Dona_Casa,170.00,75.80,1.57,120,9,103,31,N,0,98,34,N,0,N,N,N,tested_negative
+22,M,4,Fund_Inc,Solteiro,Lavrador,300.00,80.00,1.66,130,9,120,29,N,0,101,32,S,7,N,N,S,tested_positive
+23,M,5,Fund_Inc,Viúvo,Lavrador,800.00,49.10,1.61,140,8,106,19,N,0,85,26,S,7,N,N,N,tested_negative
+24,F,6,Medio_Inc,Viúvo,Dona_Casa,670.00,79.70,1.57,120,9,119,32,N,0,102,35,N,0,N,N,N,tested_negative
+25,F,0,Medio_Inc,Solteiro,Estudante,0.00,76.00,1.60,100,6,85,30,N,0,94,33,S,3,N,N,S,tested_negative
+26,F,3,Fund_Inc,Casado,Dona_Casa,0.00,70.60,1.65,100,6,94,26,N,0,95,33,S,2,N,N,N,tested_negative
+27,F,3,Fund_Inc,Casado,Dona_Casa,219.00,78.40,1.57,140,8,98,32,N,4,97,35,N,0,N,N,N,tested_negative
+28,M,0,Fund_Inc,Solteiro,Estudante,0.00,137.10,1.74,120,9,77,45,N,0,128,45,S,5,N,N,N,tested_negative
+29,F,1,Fund_Inc,Casado,Feirante,150.00,89.00,1.60,100,8,116,35,N,0,112,41,N,0,N,N,S,tested_negative
+30,F,6,Fund_Inc,Casado,Feirante,150.00,50.50,1.52,120,8,361,22,N,0,82,26,S,2,N,N,N,tested_positive
+31,F,2,Med_Com,Casado,Feirante,80.00,78.50,1.55,120,6,106,33,N,3,94,35,N,0,N,N,S,tested_negative
+32,M,0,Medio_Inc,Solteiro,Estudante,0.00,61.90,1.63,130,6,95,23,N,0,76,29,S,5,N,N,S,tested_negative
+33,F,0,Fund_Inc,Solteiro,Estudante,0.00,24.30,1.29,90,6,92,15,N,0,57,19,S,2,N,N,S,tested_negative
+34,F,1,Sup_Inc,Casado,Estudante,0.00,115.20,1.69,100,6,102,40,N,0,110,43,N,0,N,N,S,tested_negative
+35,F,3,Medio_Inc,Solteiro,Dona_Casa,140.00,59.70,1.45,100,7,142,28,N,0,93,29,N,0,N,N,S,tested_positive
+36,F,0,Fund_Inc,Solteiro,Estudante,0.00,53.50,1.54,90,7,87,23,N,0,77,26,S,1,N,N,N,tested_negative
+37,F,3,Fund_Inc,Casado,Dona_Casa,0.00,99.90,1.59,130,7,90,40,N,4,120,37,N,0,N,S,S,tested_negative
+38,F,1,Fund_Inc,Casado,Feirante,150.00,70.10,1.63,120,8,100,26,N,0,92,32,S,2,N,N,S,tested_negative
+39,F,0,Fund_Inc,Solteiro,Estudante,0.00,70.70,1.55,100,8,92,29,N,0,102,32,S,1,N,N,S,tested_negative
+40,F,0,Medio_Inc,Solteiro,Estudante,0.00,69.70,1.53,100,7,95,30,N,0,90,31,S,1,N,N,S,tested_negative
+41,F,7,Fund_Inc,Casado,Dona_Casa,0.00,58.70,1.51,140,8,179,26,N,7,95,30,S,1,N,S,S,tested_positive
+42,M,0,Fund_Inc,Solteiro,Lavrador,0.00,77.00,1.71,120,8,77,26,N,0,94,30,S,2,N,N,N,tested_negative
+43,M,5,Fund_Inc,Casado,Motorista,0.00,104.40,1.70,160,8,201,36,N,0,118,37,N,0,N,S,N,tested_negative
+44,F,4,Fund_Inc,Casado,Dona_Casa,0.00,77.30,1.56,110,6,95,32,N,4,105,36,N,0,N,N,N,tested_negative
+45,M,0,Fund_Inc,Solteiro,Estudante,0.00,60.90,1.75,100,6,80,20,N,0,71,26,S,5,N,N,S,tested_negative
+46,M,0,Fund_Inc,Solteiro,Estudante,0.00,59.40,1.50,100,8,101,26,N,0,85,29,S,1,N,N,N,tested_negative
+47,M,0,Fund_Inc,Solteiro,Estudante,0.00,59.10,1.51,100,6,75,26,N,0,81,30,S,1,N,N,S,tested_negative
+48,F,3,Medio_Inc,Casado,Dona_Casa,0.00,87.60,1.62,110,9,117,33,N,0,105,39,S,1,N,N,S,tested_negative
+49,F,0,Fund_Inc,Solteiro,Estudante,0.00,23.40,1.37,90,6,52,12,N,0,57,18,S,1,N,N,N,tested_negative
+50,F,6,Fund_Inc,Casado,Feirante,200.00,79.70,1.62,110,6,71,30,N,0,110,33,N,0,N,N,N,tested_negative
+51,M,7,Fund_Inc,Casado,Lavrador,200.00,56.10,1.55,160,12,119,23,N,0,88,33,S,7,N,S,N,tested_negative
+52,M,0,Fund_Inc,Solteiro,Estudante,0.00,50.30,1.43,100,6,78,25,N,0,84,29,S,1,N,N,S,tested_negative
+53,F,5,Fund_Inc,Casado,Dona_Casa,0.00,68.40,1.50,140,8,271,30,N,0,83,37,N,0,N,N,N,tested_positive
+54,F,1,Medio_Inc,Solteiro,Dona_Casa,0.00,44.90,1.56,90,6,47,18,N,0,64,22,S,3,N,N,N,tested_negative
+55,F,0,Fund_Inc,Solteiro,Estudante,0.00,33.30,1.38,80,6,103,17,N,0,66,22,S,1,N,N,N,tested_negative
+56,F,1,Fund_Inc,Solteiro,Dona_Casa,0.00,62.90,1.63,100,8,47,24,N,0,84,27,S,1,N,N,N,tested_negative
+57,F,0,Fund_Inc,Solteiro,Estudante,0.00,44.90,1.44,100,7,81,22,N,0,77,25,S,1,N,N,S,tested_negative
+58,F,3,Medio_Inc,Solteiro,Dona_Casa,200.00,48.90,1.57,90,6,364,20,N,0,75,26,S,2,N,N,S,tested_negative
+59,M,0,Fund_Inc,Solteiro,Estudante,0.00,32.30,1.38,100,8,127,17,N,0,67,21,S,1,N,N,S,tested_negative
+60,F,1,Medio_Inc,Solteiro,Dona_Casa,0.00,77.90,1.52,100,8,127,34,N,0,99,34,S,1,N,N,S,tested_negative
+61,M,1,Medio_Inc,Solteiro,Estudante,0.00,75.20,1.69,90,6,48,26,N,0,92,32,S,2,N,N,N,tested_negative
+62,M,0,Fund_Inc,Solteiro,Estudante,0.00,65.00,1.67,120,8,110,23,N,0,93,34,S,5,S,N,N,tested_negative
+63,M,0,Fund_Inc,Solteiro,Estudante,0.00,44.10,1.57,100,6,100,18,N,0,69,23,S,1,N,N,S,tested_negative
+64,M,0,Fund_Inc,Solteiro,Estudante,0.00,50.00,1.57,90,6,121,20,N,0,72,26,S,1,N,N,N,tested_negative
+65,M,1,Fund_Inc,Solteiro,Lavrador,0.00,70.00,1.68,100,8,99,25,N,0,85,32,S,7,S,N,N,tested_negative
+66,M,0,Fund_Inc,Solteiro,Estudante,0.00,59.30,1.55,100,7,108,25,N,0,86,32,S,5,N,S,S,tested_negative
+67,M,0,Fund_Inc,Solteiro,Estudante,0.00,63.30,1.65,120,8,148,23,N,0,86,29,S,5,N,N,S,tested_negative
+68,F,0,Sup_Inc,Solteiro,Cuida_idoso,1.200,89.30,1.69,100,6,92,31,N,0,93,36,N,0,N,N,S,tested_negative
+69,F,4,Med_Com,Casado,Estudante,0.00,84.50,1.65,100,7,139,31,N,4,90,37,N,0,N,S,S,tested_negative
+70,F,0,Med_Com,Solteiro,Estudante,0.00,70.70,1.64,100,7,119,26,N,0,88,29,N,0,N,N,S,tested_negative
+71,M,0,Medio_Inc,Solteiro,Lavrador,0.00,69.30,1.75,110,8,108,23,N,0,82,29,S,1,S,N,N,tested_negative
+72,F,4,Fund_Inc,Casado,Dona_Casa,990.00,71.00,1.65,110,8,112,26,N,0,105,37,S,1,N,N,N,tested_negative
+73,M,0,Fund_Inc,Casado,Lavrador,990.00,48.00,1.42,130,8,88,24,N,0,93,35,N,0,N,N,N,tested_negative
+74,M,0,Fund_Inc,Solteiro,Lavrador,800.00,67.00,1.60,130,9,97,26,N,0,81,28,S,5,N,N,N,tested_negative
+75,M,0,Fund_Inc,Casado,Lavrador,990.00,63.50,1.66,100,6,102,23,N,0,98,29,S,2,N,N,S,tested_negative
+76,F,0,Medio_Inc,Solteiro,Estudante,0.00,100.10,1.68,100,8,113,35,N,0,87,28,N,0,N,N,S,tested_negative
+77,F,2,Med_Com,Casado,Administrativa,0.00,93.40,1.71,130,8,107,32,N,0,100,39,N,0,N,N,N,tested_negative
+78,M,0,Fund_Comp,Casado,Motorista,990.00,85.50,1.54,120,8,274,36,N,0,105,36,S,5,N,S,S,tested_positive
+79,F,6,Fund_Inc,Casado,Dona_Casa,600.00,110.60,1.73,100,7,105,37,N,0,103,36,S,5,N,N,N,tested_negative
+80,M,0,Fund_Inc,Casado,Desempregado,0.00,89.10,1.58,100,8,107,36,N,0,106,43,N,0,N,N,S,tested_negative
+81,F,7,Fund_Inc,Casado,Feirante,0.00,107.80,1.80,120,8,110,33,N,0,114,37,N,0,N,N,N,tested_negative
+82,M,0,Fund_Inc,Solteiro,Lavrador,500.00,97.40,1.80,100,6,257,30,N,0,115,40,S,5,N,S,S,tested_positive
+83,M,0,Fund_Inc,Casado,Aposentado,990.00,96.90,1.62,100,7,107,37,N,0,116,34,N,0,N,N,S,tested_negative
+84,M,0,Med_Com,Solteiro,Lavrador,500.00,88.90,1.73,140,10,99,30,N,0,116,42,S,5,N,S,S,tested_negative
+85,M,0,Fund_Inc,Viúvo,Aposentado,990.00,52.60,1.72,90,6,92,18,N,0,107,35,N,0,N,N,N,tested_negative
+86,F,0,Fund_Inc,Solteiro,Estudante,0.00,76.00,1.72,100,7,105,26,N,0,71,27,S,5,N,N,N,tested_negative
+87,M,0,Fund_Inc,Casado,Lavrador,600.00,44.10,1.53,100,8,84,19,N,0,87,43,S,1,N,N,S,tested_negative
+88,F,1,Fund_Inc,Solteiro,Estudante,0.00,86.60,1.67,120,8,120,31,N,0,70,24,N,0,S,N,S,tested_negative
+89,M,0,Fund_Inc,Solteiro,Lavrador,600.00,62.00,1.61,140,8,543,24,N,0,102,38,N,0,N,S,S,tested_positive
+90,M,0,Fund_Inc,Casado,Aposentado,990.00,77.50,1.74,100,6,278,26,N,0,85,29,N,0,S,S,S,tested_positive
+91,M,0,Med_Com,Solteiro,Lavrador,0.00,61.90,1.58,120,8,84,25,N,0,90,34,S,5,N,N,S,tested_negative
+92,F,0,Med_Com,Solteiro,Diarista,0.00,64.00,1.62,100,7,168,24,N,0,82,31,S,3,N,S,S,tested_positive
+93,F,2,Med_Com,Casado,Estudante,0.00,68.80,1.62,90,7,233,26,N,0,79,32,N,0,N,S,S,tested_positive
+94,M,0,Fund_Inc,Casado,Lavrador,990.00,79.00,1.56,120,8,197,32,N,0,92,33,N,0,N,S,S,tested_positive
+95,F,4,Med_Com,Casado,Feirante,0.00,48.30,1.40,100,6,87,25,N,0,113,33,S,3,N,N,S,tested_negative
+96,F,0,Fund_Inc,Solteiro,Estudante,0.00,96.00,1.72,100,8,103,32,N,0,73,28,S,1,N,N,S,tested_negative
+97,M,0,Fund_Inc,Solteiro,Estudante,0.00,85.50,1.68,100,8,149,30,N,0,100,35,S,1,N,N,N,tested_negative
+98,F,0,Fund_Inc,Solteiro,Estudante,0.00,51.00,1.53,120,8,99,22,N,0,93,33,S,1,N,N,S,tested_negative
+99,F,0,Fund_Inc,Solteiro,Estudante,0.00,71.30,1.53,110,6,115,30,N,0,73,26,N,0,N,N,S,tested_negative
+100,F,3,Fund_Inc,Divorciado,Feirante,500.00,96.50,1.53,130,9,105,41,N,0,99,32,N,0,N,N,N,tested_negative
+101,F,4,Fund_Inc,Casado,Feirante,200.00,86.50,1.53,100,9,109,37,N,0,114,39,N,0,N,N,S,tested_negative
+102,F,0,Fund_Inc,Solteiro,Estudante,0.00,135.60,1.58,120,6,107,54,N,0,108,36,N,0,N,N,S,tested_negative
+103,F,0,Fund_Inc,Solteiro,Desempregado,0.00,64.00,1.62,110,8,249,24,N,0,129,47,N,0,N,S,S,tested_positive
+104,F,3,Med_Com,Solteiro,Feirante,0.00,58.00,1.45,140,8,2069,28,N,0,89,28,N,0,N,S,N,tested_positive
+105,F,1,Fund_Inc,Solteiro,Aposentado,990.00,680.00,1.49,120,9,96,306,N,0,83,31,N,0,N,N,N,tested_negative
+106,F,5,Fund_Inc,Casado,Feirante,200.00,64.00,1.63,110,7,90,24,N,0,99,34,N,0,N,N,N,tested_negative
+107,F,1,Med_Com,Casado,Dona_Casa,0.00,79.90,1.60,130,9,109,31,N,0,87,32,N,0,N,N,N,tested_negative
+108,F,5,Med_Com,Casado,Dona_Casa,0.00,61.00,1.59,100,8,87,24,N,0,102,34,N,0,N,N,S,tested_negative
+109,F,0,Med_Com,Solteiro,Dona_Casa,0.00,90.00,1.60,120,6,94,35,N,0,90,29,N,0,N,N,N,tested_negative
+110,F,1,Med_Com,Solteiro,Dona_Casa,0.00,46.60,1.41,100,7,106,23,N,0,114,36,S,1,N,N,N,tested_negative
+111,F,0,Fund_Inc,Solteiro,Estudante,0.00,83.70,1.66,100,6,94,30,N,0,83,28,S,1,N,N,N,tested_negative
+112,M,0,Medio_Inc,Solteiro,Estudante,0.00,46.80,1.59,90,7,77,19,N,0,99,37,S,1,N,N,N,tested_negative
+113,M,0,Fund_Inc,Solteiro,Estudante,0.00,73.10,1.52,130,9,500,32,N,0,85,29,N,0,N,S,N,tested_positive
+114,F,6,Fund_Inc,Casado,Dona_Casa,0.00,34.30,1.35,120,8,79,19,N,0,98,36,S,1,N,N,S,tested_negative
+115,F,0,Fund_Inc,Solteiro,Estudante,0.00,49.10,1.55,130,9,61,20,N,0,66,22,N,0,N,N,N,tested_negative
+116,F,1,Med_Com,Solteiro,Dona_Casa,0.00,55.00,1.57,140,8,114,22,N,0,74,24,N,0,N,S,N,tested_negative
+117,M,0,Fund_Inc,Casado,Aposentado,990.00,81.20,1.71,120,8,102,28,N,0,83,28,S,2,S,N,N,tested_negative
+118,M,0,Medio_Inc,Solteiro,Estudante,0.00,68.80,1.70,100,7,95,24,N,0,93,34,S,5,N,N,S,tested_negative
+119,M,0,Med_Com,Solteiro,Desempregado,0.00,34.00,1.35,100,8,81,19,N,86,86,30,S,1,N,N,N,tested_negative
+120,M,0,Fund_Inc,Solteiro,Estudante,0.00,75.30,1.54,140,10,146,32,N,0,63,24,S,2,N,N,S,tested_negative
+121,F,1,Fund_Inc,Solteiro,Feirante,200.00,63.00,1.52,120,8,101,27,N,0,101,35,S,1,N,N,N,tested_negative
+122,F,0,Fund_Inc,Solteiro,Estudante,0.00,60.00,1.67,140,8,88,22,N,0,66,22,N,0,S,S,S,tested_negative
+123,M,0,Fund_Inc,Solteiro,Lavrador,0.00,117.00,1.78,140,8,125,37,N,0,74,30,S,7,S,N,S,tested_negative
+124,M,0,Med_Com,Solteiro,Lavrador,0.00,55.00,1.65,100,7,95,20,N,0,114,40,S,7,N,N,N,tested_negative
